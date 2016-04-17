@@ -1,0 +1,8 @@
+<h1>{{t 'common.siteName'}}</h1>
+
+{{#if session.isWorking}}
+  {{paper-progress-circular md-diameter="40px"}}
+{{else}}
+  <h3>{{t 'login.explanation'}}</h3>
+  {{paper-button raised=true primary=true action=(route-action 'loginWithFacebook') label=(t 'loginForm.facebookCta')}}
+{{/if}}

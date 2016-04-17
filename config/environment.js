@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'draw-it',
+    modulePrefix: 'draw-the-word',
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
@@ -16,6 +16,20 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+    },
+
+    i18n: {
+      defaultLocale: 'en-us',
+    },
+
+    torii: {
+      sessionServiceName: 'session',
+      providers: {
+        'facebook-connect': {
+          appId: '619732491515054',
+          scope: 'email'
+        }
+      }
     }
   };
 
