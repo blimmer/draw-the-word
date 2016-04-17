@@ -2,7 +2,8 @@
   "predef": [
     "document",
     "window",
-    "-Promise"
+    "-Promise",
+    "DrawingBoard"
   ],
   "browser": true,
   "boss": true,
